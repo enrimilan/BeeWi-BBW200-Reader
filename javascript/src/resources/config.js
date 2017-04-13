@@ -1,5 +1,5 @@
 config = {
-    mac: 'd05fb8519caa'
+    mac: ''
 };
 
 module.exports = config;
