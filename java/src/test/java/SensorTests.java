@@ -45,62 +45,55 @@ public class SensorTests {
 
     @Test
     public void test_6() {
-        String[] bytes = "00 6F 00 02 24 07 00 00 06 4c".split(" ");
-        SensorData sensorData = ParseUtils.parseSensorData(bytes);
-        assertEquals(11.1, sensorData.getTemperature(), 0);
-    }
-
-    @Test
-    public void test_7() {
         String[] bytes = "00 0A 00 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(1.0, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_8() {
+    public void test_7() {
         String[] bytes = "00 01 00 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(0.1, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_9() {
+    public void test_8() {
         String[] bytes = "00 00 00 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(0.0, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_10() {
+    public void test_9() {
         String[] bytes = "00 FF FF 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(-0.1, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_11() {
+    public void test_10() {
         String[] bytes = "00 F6 FF 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(-1.0, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_12() {
+    public void test_11() {
         String[] bytes = "00 91 FF 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(-11.1, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_13() {
+    public void test_12() {
         String[] bytes = "00 3B FF 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(-19.7, sensorData.getTemperature(), 0);
     }
 
     @Test
-    public void test_14() {
+    public void test_13() {
         String[] bytes = "00 38 FF 02 24 07 00 00 06 4c".split(" ");
         SensorData sensorData = ParseUtils.parseSensorData(bytes);
         assertEquals(-20.0, sensorData.getTemperature(), 0);
