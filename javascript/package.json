@@ -1,0 +1,18 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "description": "A reader for a BeeWi BBW200 in JavaScript",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node src/main/reader.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "enrimilan",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
