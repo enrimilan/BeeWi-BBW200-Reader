@@ -42,7 +42,7 @@ describe('Sensor tests', function() {
     });
 
     it('0000 should be 0.0°C', function() {
-        var sensorData = ParseUtils.parseSensorData("000ß000224070000064c");
+        var sensorData = ParseUtils.parseSensorData("0000000224070000064c");
         expect(sensorData.getTemperature()).to.equal(0.0);
     });
 
