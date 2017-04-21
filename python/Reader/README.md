@@ -7,6 +7,7 @@
 * Nose
 
 ```
+sudo pip install pexpect
 sudo pip install nose
 sudo pip install pygatt
 ```
